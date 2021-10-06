@@ -1,47 +1,47 @@
 {
-  "name": "vue",
-  "version": "0.1.0",
-  "private": true,
+  "name": "short-url",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "dev": "vue-cli-service serve --port $PORT",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bihtyu/short-url.git"
   },
   "dependencies": {
-    "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "@cloudbase/node-sdk": "2.6.1",
+    "express": "^4.17.1",
+    "got": "11.8.2",
+    "mongodb": "^4.1.2",
+    "nanoid": "3.1.23",
+    "redis": "3.1.2",
+    "typescript": "^4.4.3",
+    "vue": "^3.2.16",
+    "vue-router": "^4.0.11"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.9.0",
-    "@vue/cli-plugin-eslint": "^3.9.0",
-    "@vue/cli-service": "^3.9.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "@types/mongodb": "^4.0.7",
+    "@types/redis": "2.8.31",
+    "@vercel/node": "1.11.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-register": "^6.26.0",
+    "ts-standard": "10.0.0",
+    "vercel": "^23.1.2",
+    "@vitejs/plugin-vue": "^1.9.2",
+    "typescript": "^4.4.3",
+    "vite": "^2.6.0",
+    "vue-tsc": "^0.3.0"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bihtyu/short-url/issues"
   },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ]
+  "homepage": "https://github.com/bihtyu/short-url#readme"
 }
